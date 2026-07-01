@@ -1,0 +1,45 @@
+/* Google Fonts — Orbitron (display), Space Grotesk (body/UI), JetBrains Mono (data).
+   Loaded via @import for Phase 0; self-hosting into /public/fonts is a Phase 6 polish task. */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap");
+
+@import "tailwindcss";
+
+/* Design tokens (spec Section 7). Exposed as Tailwind theme values, so
+   `bg-void`, `text-starlight`, `font-display`, `text-ai-glow`, etc. all work. */
+@theme {
+  /* ---- Galaxy shell (Section 7.1) ---- */
+  --color-void: #05070c; /* deep space charcoal-blue, not flat black */
+  --color-starlight: #f5f3ee; /* warm off-white — star particles + primary text */
+  --color-sun-core: #ffd37e;
+  --color-sun-edge: #ff7a45;
+
+  /* ---- Typography (Section 7.1) ---- */
+  --font-display: "Orbitron", sans-serif; /* planet names + major HUD labels, all-caps */
+  --font-body: "Space Grotesk", sans-serif; /* nav, descriptions, buttons, tooltips */
+  --font-mono: "JetBrains Mono", monospace; /* stats, coordinates, code, complexity */
+
+  /* ---- Per-planet tokens (Section 7.2) ---- */
+  /* 🔵 AI */
+  --color-ai-base: #0b1b33;
+  --color-ai-glow: #2f6fed;
+  --color-ai-accent: #7fe7e0;
+  --color-ai-highlight: #ffb37a;
+
+  /* 🟢 Web Dev */
+  --color-webdev-base: #07231c;
+  --color-webdev-glow: #34d399;
+  --color-webdev-accent: #c6f135;
+  --color-webdev-highlight: #ff8b5e;
+
+  /* 🔴 DSA */
+  --color-dsa-base: #2a0a0a;
+  --color-dsa-glow: #ff5a4e;
+  --color-dsa-accent: #ffd166;
+  --color-dsa-highlight: #6b8cae;
+
+  /* 🟣 Cybersecurity */
+  --color-cybersecurity-base: #14071f;
+  --color-cybersecurity-glow: #9d4edd;
+  --color-cybersecurity-accent: #00f0ff;
+  --color-cybersecurity-highlight: #ff3864;
+}
